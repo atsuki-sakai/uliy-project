@@ -1,0 +1,78 @@
+
+@import "@styles/variables.module.scss";
+
+.footer {
+    padding: 1rem 3rem;
+}
+
+.root {
+    padding-top: 3rem;
+    text-align: center;
+}
+
+.header {
+    text-align: start;
+    padding-bottom: 2rem;
+    p {
+        font-size: 1rem;
+    }
+    span {
+        display: block;
+        font-size: 2.3rem;
+        font-weight: 600;
+        color: $primary-color;
+        padding: 0.3rem 0;
+    }
+    span::after{
+        content: ".";
+        color: $primary-color;
+    }
+}
+
+.sub_text {
+    font-size: 0.8rem;
+    color: gray;
+}
+
+.contact_container {
+    padding: 0.5rem 3rem;
+    border: 1px solid $primary-color;
+    border-radius: 30px;
+    width: fit-content;
+    margin: auto;
+    box-shadow: $boxShadow;
+    button {
+        font-size: 1rem;
+        color: $primary-color;
+        font-weight: 600;
+    }
+}
+
+.line {
+    margin: 3rem 0;
+    height: 1px;
+    width: 100%;
+    background-color: $primary-color;
+}
+
+.footer_info {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    a {
+        font-size: 0.8rem;
+        display: block;
+        &:nth-child(2){
+            padding-left: 1.5rem;
+        }
+    }
+}
+
+.water_mark {
+    text-align: start;
+    color:gray;
+    font-size: 0.7rem;
+    padding-top: 1rem;
+    padding-bottom: 4rem;
+}

@@ -3,7 +3,7 @@
 .root {
     position: relative;
     width: 100dvw;
-    height: 100dvh;
+    height: 100%;
 }
 
 .image_container {
@@ -101,8 +101,8 @@
 }
 
 
-.main_content {
-    padding: 2rem;
+.section_about_us {
+    padding: 3rem 2rem;
     @include screenSize(desctop) {
         padding: 4rem;
     }
@@ -130,3 +130,349 @@
     }
 }
 
+.description_container {
+    text-align: center;
+    p{
+        font-weight: 600;
+        font-size: 1.2rem;
+        max-width: 21rem;
+        margin: auto;
+    }
+    span {
+        display: block;
+        padding: 1rem 1rem;
+        font-size: 0.8rem;
+        max-width: 30rem;
+        margin: auto;
+    }
+    @include screenSize(desctop){
+        p{
+            font-size: 2rem;
+            max-width: 32rem;
+        }
+        span{
+            font-size: 1.2rem;
+            max-width: 40rem;
+        }
+    }
+}
+
+.about_content {
+    padding: 2.5rem 0;
+    margin: auto;
+    max-width: 62rem;
+}
+
+.about_container {
+    border: 1px solid $primary-color;
+    border-radius: 2rem;
+    padding: 3rem 1.2rem;
+    background-color: rgba(247, 255, 248, 0.8);
+    p {
+        font-size: 1.6rem;
+        padding: 0.5rem 0;
+        color: $primary-color;
+    }
+    span{
+        display: block;
+        opacity: 0.6;
+        &:nth-child(1){
+            font-size: 1.2rem;
+        }
+        &:nth-child(3){
+            font-size: 0.8rem;
+            padding-bottom: 1rem;
+        }
+    }
+}
+.about_wrapper {
+    height: auto;
+    width: 100%;
+    @include screenSize(tablet){
+        display: flex;
+
+    }
+}
+.about_wrapper_2 {
+    height: auto;
+    width: 100%;
+    @include screenSize(tablet){
+        display: flex;
+        flex-direction: row-reverse;
+    }
+}
+
+.about_item {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 0.5rem 0;
+    p {
+        font-size: 0.8rem;
+        color: black;
+        padding: 0.5rem;
+    }
+    @include screenSize(tablet){
+        p {
+            font-size: 1rem;
+            padding: 2rem;
+        }
+    }
+}
+
+.about_image {
+    height: auto;
+    max-height: 300px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: $boxShadow;
+    padding: 0.5rem;
+}
+
+.approach_description {
+    span {
+        display: block;
+        text-align: center;
+        font-size: 1rem;
+        font-weight: 600;
+    }
+}
+
+.section_approach {
+    padding: 3rem 2rem;
+    padding-bottom: 5rem;
+    background-color: rgb(170, 255, 170);
+    color: black;
+    @include screenSize(desctop) {
+        padding: 4rem;
+    }
+}
+
+
+.approach_content {
+    position: relative;
+    margin-top: 1rem;
+    width: 100%;
+    height: fit-content;
+    border: 2px solid $primary-color;
+    border-radius: 20px;
+    background-color: white;
+    @include screenSize(tablet){
+        display: flex;
+    }
+}
+.approach_item {
+    border: 2px solid $primary-color;
+    border-bottom: 4px solid $primary-color;
+    border-radius: 17px;
+    padding: 2rem 1rem;
+    text-align: center;
+    p {
+        font-size: 1.5rem;
+        font-weight: 600;
+        text-align: center;
+    }
+    span {
+        display: block;
+        margin: 1rem 0;
+        font-weight: 600;
+    }
+}
+
+
+.approach_item_2 {
+    border-radius: 17px;
+    padding: 2rem 1rem;
+    text-align: center;
+    p {
+        font-size: 1.5rem;
+        font-weight: 600;
+        text-align: center;
+    }
+    span {
+        display: block;
+        margin: 1rem 0;
+        font-weight: 600;
+    }
+}
+
+.approach_item_2 {
+    border-radius: 17px;
+    padding: 2rem 1rem;
+    text-align: center;
+    p {
+        font-size: 1.5rem;
+        font-weight: 600;
+        text-align: center;
+    }
+    span {
+        display: block;
+        margin: 1rem 0;
+        font-weight: 600;
+    }
+}
+
+
+.strong_text {
+    padding: 0.2rem 1rem;
+    border-radius: 30px;
+    background-color: black;
+    width: fit-content;
+    margin: 0.5rem auto;
+    p {
+        font-size: 0.8rem;
+        font-weight: 300;
+        color: white;
+    }
+}
+
+.text_list {
+    text-align: center;
+    list-style: decimal;
+    width: fit-content;
+    margin: auto;
+
+    li {
+        font-size: 0.85rem;
+    }
+}
+.multi {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 50px;
+    background-color: white;
+    @include center;
+}
+
+.approach_content_2 {
+    .plus {
+        text-align: center;
+        padding: 1rem 0;
+        font-size: 50px;
+    }
+    .approach_item {
+        background-color: white;
+    }
+}
+
+.icon_container {
+    @include center;
+    padding: 1.5rem 0;
+    svg {
+        height: 50px;
+        width: 50px;
+    }
+}
+
+.result_content {
+    position: relative;
+    margin-top: 1rem;
+    width: 100%;
+    height: fit-content;
+    border: 2px solid $primary-color;
+    border-radius: 20px;
+    background-color: white;
+}
+.result_item {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.result_header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0;
+    border-bottom: 1px solid black;
+    span {
+        font-size: 0.7rem;
+    }
+    div{
+        margin: 0 0.5rem;
+        height: 20px;
+        width: 1px;
+        background-color: black;
+    }
+    p{
+        font-size: 1.4rem;
+    }
+}
+
+.result_container.result_container {
+    padding: 2rem;
+    p {
+        font-size: 1.1rem;
+        font-weight: 600;
+    }
+    span {
+        display: block;
+        padding-top: 3rem;
+        font-size: 1rem;
+        color: $primary-color;
+    }
+}
+
+
+.section_plan {
+    padding: 3rem 2rem;
+    background: linear-gradient(rgb(170, 255, 170), $primary-color);
+    @include screenSize(desctop) {
+        padding: 4rem;
+    }
+}
+
+.plan_content {
+    padding: 3rem 2rem;
+    border-radius: 20px;
+    background-color:rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+    color: white;
+}
+
+.plan_menu {
+    padding-bottom: 4rem;
+}
+.plan_header {
+    text-align: center;
+    p {
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+    span {
+        display: block;
+        font-size: 0.8rem;
+        padding: 1.4rem 0;
+    }
+    img {
+        height: 100%;
+        width: 100%;
+        background-color: white;
+    }
+}
+
+.plan_container {
+    padding: 2rem 0;
+    p {
+        font-size: 1rem;
+        font-weight: 600;
+    }
+    span {
+        display: block;
+        padding-top: 1rem;
+        font-size: 0.8rem;
+    }
+}
+
+.plan_item {
+    margin: 0.5rem 0;
+    padding: 0.5rem 2rem;
+    background-color: white;
+    border-radius: 10px;
+    p {
+        color:black;
+        font-size: 0.8rem;
+    }
+}

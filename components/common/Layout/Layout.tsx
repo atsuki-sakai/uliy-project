@@ -1,5 +1,5 @@
 import React, { ReactNode } from "react";
-import { Header, MetaHead } from "@components/common";
+import { Footer, Header, MetaHead } from "@components/common";
 import style from "./Layout.module.scss";
 
 interface Props {
@@ -13,6 +13,7 @@ const Layout = ({ children }: Props) => {
       <div className={style.root}>
         <Header />
         <main>{children}</main>
+        <Footer />
       </div>
     </>
   );
