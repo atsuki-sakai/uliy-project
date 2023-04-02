@@ -1,0 +1,32 @@
+
+@import "@styles/variables.module.scss";
+
+.sample_link a{
+  display: inline-block;
+  color: black;
+  font-size:120%;
+  text-decoration:none;
+  position: relative;
+  transition: .3s;
+}
+.sample_link a::before,
+.sample_link a::after{
+	position: absolute;
+	content: '';
+	width: 0;
+	height: 2px;
+	background-color: $primary-color;
+	transition: .3s;
+}
+.sample_link a::before {
+	top: 0;
+	left: 0;
+}
+.sample_link a::after {
+	bottom: 0;
+	right: 0;
+}
+.sample_link a:hover::before,
+.sample_link a:hover::after {
+	width: 100%;
+}

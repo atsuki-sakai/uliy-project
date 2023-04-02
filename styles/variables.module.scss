@@ -1,0 +1,38 @@
+
+// GLOBAL
+$primary-color: #1f7c00;
+$accentColor: #FFFFFF;
+$defaultPadding: 1rem;
+$letterSpacing: 1px;
+$primaryFont: "Zen Kaku Gothic New";
+$boxShadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+// 568px < モバイルレイアウト
+$breakpoints: (
+  tablet: 870px,
+  desctop: 1200px,
+);
+
+
+:export {
+  primaryColor: $primary-color;
+  accentColor: $defaultPadding;
+  primaryFont: $primaryFont;
+  defaultPadding: $defaultPadding;
+  letterSpacing: $letterSpacing;
+  boxShadow: $boxShadow
+;
+}
+
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin screenSize($size) {
+  @media screen and (min-width: #{map-get($breakpoints, $size)}) {
+    @content;
+  }
+}
+
