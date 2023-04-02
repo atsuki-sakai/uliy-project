@@ -116,9 +116,23 @@
         font-weight: 600;
     }
     span{
+        position: relative;
         display: block;
         font-size: 0.8rem;
+        padding-top: 0.8rem;
         color: gray;
+        &:after{
+            content: "";
+            position: absolute;
+            top: 5px;
+            left: 0;
+            right: 0;
+            width: 220px;
+            height: 2px;
+            margin-top: 1rem;
+            margin: auto;
+            background-color: $primary-color;
+        }
     }
     @include screenSize(desctop){
         p{
@@ -137,6 +151,7 @@
         font-size: 1.2rem;
         max-width: 21rem;
         margin: auto;
+        color: $primary-color
     }
     span {
         display: block;
@@ -160,7 +175,10 @@
 .about_content {
     padding: 2.5rem 0;
     margin: auto;
-    max-width: 62rem;
+    max-width: 30rem;
+    @include screenSize(tablet){
+        max-width: 50rem;
+    }
 }
 
 .about_container {
@@ -230,6 +248,8 @@
 }
 
 .approach_description {
+     max-width: 30rem;
+    margin: auto;
     span {
         display: block;
         text-align: center;
@@ -241,15 +261,16 @@
 .section_approach {
     padding: 3rem 2rem;
     padding-bottom: 5rem;
-    background-color: rgb(170, 255, 170);
+    background-color: rgb(228, 255, 223);
     color: black;
     @include screenSize(desctop) {
         padding: 4rem;
     }
 }
 
-
 .approach_content {
+    max-width: 30rem;
+    margin: auto;
     position: relative;
     margin-top: 1rem;
     width: 100%;
@@ -259,9 +280,12 @@
     background-color: white;
     @include screenSize(tablet){
         display: flex;
+        max-width: 50rem;
+        justify-content: space-between;
     }
 }
 .approach_item {
+    max-width: 30rem;
     border: 2px solid $primary-color;
     border-bottom: 4px solid $primary-color;
     border-radius: 17px;
@@ -277,9 +301,10 @@
         margin: 1rem 0;
         font-weight: 600;
     }
+    @include screenSize(tablet){
+        padding: 4rem;
+    }
 }
-
-
 .approach_item_2 {
     border-radius: 17px;
     padding: 2rem 1rem;
@@ -294,9 +319,16 @@
         margin: 1rem 0;
         font-weight: 600;
     }
+    @include screenSize(tablet){
+        padding: 4rem;
+    }
 }
-
-.approach_item_2 {
+.approach_item_3 {
+    max-width: 30rem;
+    margin: auto;
+    background-color: white;
+    border: 2px solid $primary-color;
+    border-bottom: 4px solid $primary-color;
     border-radius: 17px;
     padding: 2rem 1rem;
     text-align: center;
@@ -310,8 +342,10 @@
         margin: 1rem 0;
         font-weight: 600;
     }
+     @include screenSize(tablet){
+        max-width: 50rem;
+    }
 }
-
 
 .strong_text {
     padding: 0.2rem 1rem;
@@ -367,6 +401,8 @@
 }
 
 .result_content {
+    max-width: 30rem;
+    margin: auto;
     position: relative;
     margin-top: 1rem;
     width: 100%;
@@ -374,6 +410,9 @@
     border: 2px solid $primary-color;
     border-radius: 20px;
     background-color: white;
+    @include screenSize(tablet){
+        max-width: 50rem;
+    }
 }
 .result_item {
     text-align: center;
@@ -387,6 +426,10 @@
     justify-content: center;
     padding: 1rem 0;
     border-bottom: 1px solid black;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+    background: linear-gradient(to right, purple ,yellow);
+    color: white;
     span {
         font-size: 0.7rem;
     }
@@ -418,13 +461,15 @@
 
 .section_plan {
     padding: 3rem 2rem;
-    background: linear-gradient(rgb(170, 255, 170), $primary-color);
+    background: linear-gradient(rgb(228, 255, 223), white);
     @include screenSize(desctop) {
         padding: 4rem;
     }
 }
 
 .plan_content {
+    max-width: 30rem;
+    margin: auto;
     padding: 3rem 2rem;
     border-radius: 20px;
     background-color:rgba(0, 0, 0, 0.4);
@@ -432,6 +477,18 @@
     color: white;
 }
 
+.grid {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    max-width: 30rem;
+    margin: auto;
+    gap: 3rem;
+    @include screenSize(desctop){
+        padding-top: 2rem;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        max-width: 50rem;
+    }
+}
 .plan_menu {
     padding-bottom: 4rem;
 }

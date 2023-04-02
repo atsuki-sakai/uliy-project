@@ -126,7 +126,7 @@ export default function Home() {
             </div>
             <div className={style.approach_content_2}>
               <div className={style.plus}>+</div>
-              <div className={style.approach_item}>
+              <div className={style.approach_item_3}>
                 <p>Coaching</p>
                 <div className={style.strong_text}>
                   <p>来店者数アップ</p>
@@ -163,139 +163,141 @@ export default function Home() {
               <p>Plan</p>
               <span>プラン</span>
             </div>
-            <div className={style.plan_menu}>
-              <div className={style.plan_content}>
-                <div className={style.plan_header}>
-                  <p>SNS Consultant</p>
-                  <span>SNS運用支援</span>
-                  <Image
-                    src={"/images/uliy-logo.webp"}
-                    width={600}
-                    height={600}
-                    alt="plan image"
-                  />
-                </div>
-                <div className={style.plan_container}>
-                  <p>
-                    社内外への発信による企業ブランディングの向上サポートを行っています。
-                  </p>
-                  <span>
-                    note媒体にLYLのプログラム参加者へのインタビュー記事を作成。対象者の学びの共有や採用時の企業の取り組み紹介としてもご活用頂けます。社内へのプログラム紹介などにご活用できる動画制作も可能です。
-                  </span>
-                </div>
-                <div className={style.plan_item}>
-                  <p>組織全体の学びの共有として</p>
-                </div>
-                <div className={style.plan_item}>
-                  <p>組織全体の学びの共有として</p>
-                </div>
-                <div className={style.plan_item}>
-                  <p>組織全体の学びの共有として</p>
-                </div>
-                <div className={style.plan_item}>
-                  <p>組織全体の学びの共有として</p>
-                </div>
-              </div>
-            </div>
-            <div className={style.plan_menu}>
-              <div className={style.plan_content}>
-                <div className={style.plan_header}>
-                  <p>SNS Advertisement</p>
-                  <span>SNS広告</span>
-                  <Image
-                    src={"/images/uliy-logo.webp"}
-                    width={600}
-                    height={600}
-                    alt="plan image"
-                  />
-                </div>
-                <div className={style.plan_container}>
-                  <p>
-                    社内外への発信による企業ブランディングの向上サポートを行っています。
-                  </p>
-                  <span>
-                    note媒体にLYLのプログラム参加者へのインタビュー記事を作成。対象者の学びの共有や採用時の企業の取り組み紹介としてもご活用頂けます。社内へのプログラム紹介などにご活用できる動画制作も可能です。
-                  </span>
-                </div>
-                <div className={style.plan_item}>
-                  <p>組織全体の学びの共有として</p>
-                </div>
-                <div className={style.plan_item}>
-                  <p>組織全体の学びの共有として</p>
-                </div>
-                <div className={style.plan_item}>
-                  <p>組織全体の学びの共有として</p>
-                </div>
-                <div className={style.plan_item}>
-                  <p>組織全体の学びの共有として</p>
+            <div className={style.grid}>
+              <div className={style.plan_menu}>
+                <div className={style.plan_content}>
+                  <div className={style.plan_header}>
+                    <p>SNS Consultant</p>
+                    <span>SNS運用支援</span>
+                    <Image
+                      src={"/images/uliy-logo.webp"}
+                      width={600}
+                      height={600}
+                      alt="plan image"
+                    />
+                  </div>
+                  <div className={style.plan_container}>
+                    <p>
+                      社内外への発信による企業ブランディングの向上サポートを行っています。
+                    </p>
+                    <span>
+                      note媒体にLYLのプログラム参加者へのインタビュー記事を作成。対象者の学びの共有や採用時の企業の取り組み紹介としてもご活用頂けます。社内へのプログラム紹介などにご活用できる動画制作も可能です。
+                    </span>
+                  </div>
+                  <div className={style.plan_item}>
+                    <p>組織全体の学びの共有として</p>
+                  </div>
+                  <div className={style.plan_item}>
+                    <p>組織全体の学びの共有として</p>
+                  </div>
+                  <div className={style.plan_item}>
+                    <p>組織全体の学びの共有として</p>
+                  </div>
+                  <div className={style.plan_item}>
+                    <p>組織全体の学びの共有として</p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div className={style.plan_menu}>
-              <div className={style.plan_content}>
-                <div className={style.plan_header}>
-                  <p>MEO</p>
-                  <span>マップエンジン最適化</span>
-                  <Image
-                    src={"/images/uliy-logo.webp"}
-                    width={600}
-                    height={600}
-                    alt="plan image"
-                  />
-                </div>
-                <div className={style.plan_container}>
-                  <p>
-                    社内外への発信による企業ブランディングの向上サポートを行っています。
-                  </p>
-                  <span>
-                    note媒体にLYLのプログラム参加者へのインタビュー記事を作成。対象者の学びの共有や採用時の企業の取り組み紹介としてもご活用頂けます。社内へのプログラム紹介などにご活用できる動画制作も可能です。
-                  </span>
-                </div>
-                <div className={style.plan_item}>
-                  <p>組織全体の学びの共有として</p>
-                </div>
-                <div className={style.plan_item}>
-                  <p>組織全体の学びの共有として</p>
-                </div>
-                <div className={style.plan_item}>
-                  <p>組織全体の学びの共有として</p>
-                </div>
-                <div className={style.plan_item}>
-                  <p>組織全体の学びの共有として</p>
+              <div className={style.plan_menu}>
+                <div className={style.plan_content}>
+                  <div className={style.plan_header}>
+                    <p>SNS Advertisement</p>
+                    <span>SNS広告</span>
+                    <Image
+                      src={"/images/uliy-logo.webp"}
+                      width={600}
+                      height={600}
+                      alt="plan image"
+                    />
+                  </div>
+                  <div className={style.plan_container}>
+                    <p>
+                      社内外への発信による企業ブランディングの向上サポートを行っています。
+                    </p>
+                    <span>
+                      note媒体にLYLのプログラム参加者へのインタビュー記事を作成。対象者の学びの共有や採用時の企業の取り組み紹介としてもご活用頂けます。社内へのプログラム紹介などにご活用できる動画制作も可能です。
+                    </span>
+                  </div>
+                  <div className={style.plan_item}>
+                    <p>組織全体の学びの共有として</p>
+                  </div>
+                  <div className={style.plan_item}>
+                    <p>組織全体の学びの共有として</p>
+                  </div>
+                  <div className={style.plan_item}>
+                    <p>組織全体の学びの共有として</p>
+                  </div>
+                  <div className={style.plan_item}>
+                    <p>組織全体の学びの共有として</p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div className={style.plan_menu}>
-              <div className={style.plan_content}>
-                <div className={style.plan_header}>
-                  <p>External Site Linkage</p>
-                  <span>外部サイト連携</span>
-                  <Image
-                    src={"/images/uliy-logo.webp"}
-                    width={600}
-                    height={600}
-                    alt="plan image"
-                  />
+              <div className={style.plan_menu}>
+                <div className={style.plan_content}>
+                  <div className={style.plan_header}>
+                    <p>MEO</p>
+                    <span>マップエンジン最適化</span>
+                    <Image
+                      src={"/images/uliy-logo.webp"}
+                      width={600}
+                      height={600}
+                      alt="plan image"
+                    />
+                  </div>
+                  <div className={style.plan_container}>
+                    <p>
+                      社内外への発信による企業ブランディングの向上サポートを行っています。
+                    </p>
+                    <span>
+                      note媒体にLYLのプログラム参加者へのインタビュー記事を作成。対象者の学びの共有や採用時の企業の取り組み紹介としてもご活用頂けます。社内へのプログラム紹介などにご活用できる動画制作も可能です。
+                    </span>
+                  </div>
+                  <div className={style.plan_item}>
+                    <p>組織全体の学びの共有として</p>
+                  </div>
+                  <div className={style.plan_item}>
+                    <p>組織全体の学びの共有として</p>
+                  </div>
+                  <div className={style.plan_item}>
+                    <p>組織全体の学びの共有として</p>
+                  </div>
+                  <div className={style.plan_item}>
+                    <p>組織全体の学びの共有として</p>
+                  </div>
                 </div>
-                <div className={style.plan_container}>
-                  <p>
-                    社内外への発信による企業ブランディングの向上サポートを行っています。
-                  </p>
-                  <span>
-                    note媒体にLYLのプログラム参加者へのインタビュー記事を作成。対象者の学びの共有や採用時の企業の取り組み紹介としてもご活用頂けます。社内へのプログラム紹介などにご活用できる動画制作も可能です。
-                  </span>
-                </div>
-                <div className={style.plan_item}>
-                  <p>組織全体の学びの共有として</p>
-                </div>
-                <div className={style.plan_item}>
-                  <p>組織全体の学びの共有として</p>
-                </div>
-                <div className={style.plan_item}>
-                  <p>組織全体の学びの共有として</p>
-                </div>
-                <div className={style.plan_item}>
-                  <p>組織全体の学びの共有として</p>
+              </div>
+              <div className={style.plan_menu}>
+                <div className={style.plan_content}>
+                  <div className={style.plan_header}>
+                    <p>External Site Linkage</p>
+                    <span>外部サイト連携</span>
+                    <Image
+                      src={"/images/uliy-logo.webp"}
+                      width={600}
+                      height={600}
+                      alt="plan image"
+                    />
+                  </div>
+                  <div className={style.plan_container}>
+                    <p>
+                      社内外への発信による企業ブランディングの向上サポートを行っています。
+                    </p>
+                    <span>
+                      note媒体にLYLのプログラム参加者へのインタビュー記事を作成。対象者の学びの共有や採用時の企業の取り組み紹介としてもご活用頂けます。社内へのプログラム紹介などにご活用できる動画制作も可能です。
+                    </span>
+                  </div>
+                  <div className={style.plan_item}>
+                    <p>組織全体の学びの共有として</p>
+                  </div>
+                  <div className={style.plan_item}>
+                    <p>組織全体の学びの共有として</p>
+                  </div>
+                  <div className={style.plan_item}>
+                    <p>組織全体の学びの共有として</p>
+                  </div>
+                  <div className={style.plan_item}>
+                    <p>組織全体の学びの共有として</p>
+                  </div>
                 </div>
               </div>
             </div>

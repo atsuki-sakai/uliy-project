@@ -2,10 +2,13 @@
 @import "@styles/variables.module.scss";
 
 .footer {
+    z-index: 500;
+    border-top: 8px solid $primary-color;
     padding: 1rem 3rem;
 }
 
 .root {
+    width: 1;
     padding-top: 3rem;
     text-align: center;
 }
@@ -37,29 +40,32 @@
 .contact_container {
     padding: 0.5rem 3rem;
     border: 1px solid $primary-color;
-    border-radius: 30px;
+    border-radius: 100px;
     width: fit-content;
     margin: auto;
     box-shadow: $boxShadow;
     button {
+        letter-spacing: 2px;
         font-size: 1rem;
         color: $primary-color;
-        font-weight: 600;
+        @include screenSize(tablet){
+        font-size: 1.4rem;
+    }
     }
 }
 
 .line {
-    margin: 3rem 0;
     height: 1px;
-    width: 100%;
+    width: auto;
+    margin: 3rem 3rem;
     background-color: $primary-color;
 }
 
 .footer_info {
-    display: flex;
+    display: none;
+    // display: flex;
     align-items: center;
     justify-content: flex-start;
-
     a {
         font-size: 0.8rem;
         display: block;
